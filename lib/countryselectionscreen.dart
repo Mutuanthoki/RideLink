@@ -28,7 +28,7 @@ class _CountryselectionscreenState extends State<Countryselectionscreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromRGBO(169, 221, 233, 1),
+        backgroundColor: const Color.fromRGBO(169, 221, 233, 1),
         title: const Text(
           'Choose Country',
           style: TextStyle(fontWeight: FontWeight.bold),
@@ -41,7 +41,7 @@ class _CountryselectionscreenState extends State<Countryselectionscreen> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => Accountscreen(),
+                    builder: (context) => const Accountscreen(),
                   ),
                 );
               },
@@ -49,7 +49,7 @@ class _CountryselectionscreenState extends State<Countryselectionscreen> {
                 color: Colors.white,
                 width: 40,
                 height: 30,
-                child: Text(
+                child: const Text(
                   'Next',
                   style: TextStyle(
                     color: Color.fromRGBO(169, 221, 233, 1),
@@ -66,7 +66,7 @@ class _CountryselectionscreenState extends State<Countryselectionscreen> {
           return ListTile(
             title: Text(countries[index]),
             trailing: selectedCountry == countries[index]
-                ? Icon(Icons.check, color: Colors.blue)
+                ? const Icon(Icons.check, color: Colors.blue)
                 : null,
             onTap: () {
               setState(() {

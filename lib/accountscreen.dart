@@ -26,10 +26,10 @@ class _AccountscreenState extends State<Accountscreen> {
           Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 100,
               ),
-              Text(
+              const Text(
                 'Ready to save time & money on your commute?',
                 style: TextStyle(
                   fontSize: 24,
@@ -38,22 +38,22 @@ class _AccountscreenState extends State<Accountscreen> {
                 ),
                 textAlign: TextAlign.center,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 50),
                 ElevatedButton(
                   onPressed: (){
 
                   },
-                  child: Text(
+                  child: const Text(
                     'More options'),
                   ),
-                  SizedBox(height: 50),
+                  const SizedBox(height: 20),
 
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      Image.asset('asset/car.jpg'),
-                      Image.asset('asset/car1.webp'),
+                     Image.asset('assets/car.jpg'),
+                     Image.asset('assets/car1.webp'),
                     ],
                   )
             ],

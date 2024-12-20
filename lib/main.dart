@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'RideLink',
       home: SplashScreen(),
@@ -26,6 +26,8 @@ class MyApp extends StatelessWidget {
 }
 
 class SplashScreen extends StatefulWidget {
+  const SplashScreen({super.key});
+
   @override
   State<SplashScreen> createState() => _SplashScreenState();
 }
@@ -41,13 +43,13 @@ class _SplashScreenState extends State<SplashScreen> {
     final navigator = Navigator.of(context);
     await Future.delayed(const Duration(seconds: 3));
     navigator.push(
-        MaterialPageRoute(builder: (context) => Countryselectionscreen()));
+        MaterialPageRoute(builder: (context) => const Countryselectionscreen()));
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFA9DDE9),
+      backgroundColor: const Color(0xFFA9DDE9),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -56,8 +58,8 @@ class _SplashScreenState extends State<SplashScreen> {
               'assets/car.jpg',
               height: 200.0,
             ),
-            SizedBox(height: 20.0),
-            Text(
+            const SizedBox(height: 20.0),
+            const Text(
               'RideLink CARPOOL',
               style: TextStyle(
                 fontStyle: FontStyle.italic,
