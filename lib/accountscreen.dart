@@ -17,45 +17,57 @@ class _AccountscreenState extends State<Accountscreen> {
           Container(
             decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/car1.webp'),
+                image: AssetImage('assets/car3.jpeg'),
                 fit: BoxFit.fill,
                 ),
             ),
           ),
 
           Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.end,
             children: [
               const SizedBox(
-                height: 100,
+                height: 150,
               ),
-              const Text(
-                'Ready to save time & money on your commute?',
-                style: TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: const Text(
+                  'Ready to save time & money on your commute?',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black87,
+                  ),
+                  textAlign: TextAlign.center,
                 ),
-                textAlign: TextAlign.center,
               ),
               const SizedBox(
-                height: 50),
+                height: 10),
                 ElevatedButton(
                   onPressed: (){
 
                   },
-                  child: const Text(
-                    'More options'),
+                    style: ElevatedButton.styleFrom(
+                      padding: EdgeInsets.symmetric(horizontal: 32, vertical: 12),
+                      shape:RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(30)
+                      ),
+                    ),
+                    child: Text("Continue with your Waze account",
+                    style: TextStyle(color: Colors.blue, fontSize: 16),
+                    ),
                   ),
-                  const SizedBox(height: 20),
 
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                     Image.asset('assets/car.jpg'),
-                     Image.asset('assets/car1.webp'),
-                    ],
-                  )
+                  TextButton(
+                    onPressed: (){},
+                    child: Text("More options",
+                    style: TextStyle(
+                      color: Colors.blue,
+                      fontSize: 16,
+                    ),),
+                    ),
+                     
+                  
             ],
           )
         ],
