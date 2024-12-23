@@ -44,7 +44,7 @@ class _SplashScreenState extends State<SplashScreen> {
     await Future.delayed(const Duration(seconds: 3));
     navigator.push(
         MaterialPageRoute(builder: (context) => const Countryselectionscreen()));
-  }
+  } 
 
   @override
   Widget build(BuildContext context) {
